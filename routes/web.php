@@ -15,6 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/gallery', 'galleryController@show');
+
 Route::get('file/upload', 'FileController@form')->name('file.form');
 Route::get('file/index', 'FileController@index')->name('file.index');
 Route::post('file/upload', 'FileController@upload')->name('file.upload');

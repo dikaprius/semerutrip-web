@@ -3,7 +3,7 @@
 @section('content')
 
 <img src="images/Logo.png" data-aos="zoom-in-down" alt="Semeru-Trip Logo" class="Logo">
-<script type="text/javascript">
+    <script type="text/javascript">
           AOS.init({
                 duration: 2000,
             })
@@ -21,7 +21,7 @@
 </div>
   <div class="grid-container1">
       <div class="text">
-        <p>Semeru Mountain, most people recognize as just Semeru, is a volcano mountain that settled in East Java, precisely in Lumajang regency. Semeru in the highest mountain in Java which has 3.676 meters above sea level and it also known as the Mahameru or Great Mountain.</p>
+        <p>Semeru Mountain, most people recognize as just Semeru, is a volcano mountain that settled in East Java, precisely in Lumajang regency. Semeru in the <strong>highest mountain</strong>  in Java which has 3.676 meters above sea level and it also known as the Mahameru or Great Mountain.</p>
        <p>The name Semeru was derived from Hindu-Buddhist mythical mountain of Meru or Semeru, the abode of gods.</p>
        <p>The summit crater in Semeru is called Jonggring Saloka. In 1913 and 1946 the Jonggring Saloka Crater had dome with a height of 3744.8 M until end November 1973. At the southern side, the dome is broke the edge of the crater, which causes the flowing lava into the south side including Pronojiwo and Candipuro in Lumajang.</p>
       </div>
@@ -30,8 +30,9 @@
       </div>
   </div>
 <div class="title" id="Destination" data-aos= "fade-right">
-  DESTINATION
+  SPOT
 </div>
+<p class="text-title">There Is So Many Beautiful Place That you Can Visit During The Trip. </p>
 <div class="grid-container">
 
   <div class="content">
@@ -100,8 +101,9 @@
   <h5>And many More ...</h5>
 </div>
 
+
 <div class="title" id="Trip" data-aos= "fade-right">
-TRIP
+OPEN TRIP
 </div>
   <h4 class="text-title"> Sign Up Here </h4>
   <form method="post" action="#">
@@ -135,4 +137,7 @@ TRIP
   </form>
 
 
+  <div class="title" id="About">
+  ABOUT
+  </div>
 @endsection

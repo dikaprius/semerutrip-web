@@ -31,7 +31,7 @@
                                         <td>{{ $file->filename }}</td>
                                         <td>
 
-                                            <a href="{{ asset(Storage::url($file->filename)) }}">
+                                            <a href="{{ Storage::url($file->filename) }}">
                                                 View
                                             </a>
                                             <form action="{{url('file/delete/' . $file->id)}}" method="post">

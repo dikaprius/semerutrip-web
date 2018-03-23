@@ -222,3 +222,21 @@ form {
   padding: 50px;
   border-left: solid 3px white;
 }
+
+.nav-back {
+  background-color: #afabab1f;
+}
+
+.image{
+  width: auto;
+  height: 300px;
+}
+
+.grid-container2 {
+  display: grid;
+  grid-gap: 20px 5px;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+  margin:25px auto 0 auto;
+
+}
