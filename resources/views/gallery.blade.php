@@ -21,7 +21,7 @@
 <div class="content">
   <a href="{{url('') . Storage::url($image->filename)}}" data-lightbox="roadtrip" data-title="{{ $image->title }}">
     <div class="content-overlay"></div>
-    <img src="{{url('') . Storage::url($image->filename)}}" alt="Ranu Pani" class="image">
+    <img src="{{url('') . Storage::url($image->filename)}}" alt="{{ $image -> title }}" class="image">
     <div class="content-details fadeIn-top">
       <h3>{{ $image->title}}</h3>
       <p></p>

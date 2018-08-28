@@ -33,7 +33,7 @@
                           <a class="nav-link" href="{{url('/#Destination')}}">Spot</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link" href="#">Gallery</a>
+                          <a class="nav-link" href="{{ url('/gallery') }}">Gallery</a>
                       </li>
                       <li class="nav-item">
                           <a class="nav-link" href="#">About</a>

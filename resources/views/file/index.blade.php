@@ -31,21 +31,24 @@
                                         <td>{{ $file->filename }}</td>
                                         <td>
 
-                                            <a href="{{ Storage::url($file->filename) }}">
+                                            <a href="{{ url('') .Storage::url($file->filename) }}" data-title="{{ $file->title }}" data-lightbox="roadtrip">
                                                 View
                                             </a>
                                             <form action="{{url('file/delete/' . $file->id)}}" method="post">
-                                              <input type="submit" name="delete" value="delete">
                                                 {{ csrf_field() }}
-                                                <input type="hidden" name="_method" value="DELETE">
+                                                <input type="submit" name="_method" value="DELETE">
 
                                             </form>
                                         </td>
                                         <td>{{ $file->created_at->diffForHumans() }}</td>
                                     </tr>
                                 @endforeach
+
                             </tbody>
                         </table>
+                    </div>
+                    <div class="Pagination">
+                        {{$files->links()}}
                     </div>
                 </div>
             </div>

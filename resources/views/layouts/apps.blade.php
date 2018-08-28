@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="{!! asset('/css/style.css') !!}">
         <title>Semeru-Trip</title>
         <!-- Fonts -->
@@ -22,19 +23,19 @@
     <body>
       <div class="background">
 
-        <nav class="navbar navbar-expand-sm navbar-light" style="padding-top:50px" data-toggle="affix">
+        <nav class="navbar navbar-expand-sm navbar-light nav-back" data-toggle="affix">
           <div class="mx-auto d-sm-flex d-block flex-sm-nowrap">
-              <a class="navbar-brand" href="#Home">Home</a>
+              <a class="navbar-brand" href="{{url('/#Home')}}">Home</a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse text-center" id="navbars">
+              <div class="collapse navbar-collapse text-center" id="navbarsExample11">
                   <ul class="navbar-nav">
                       <li class="nav-item">
-                          <a class="nav-link" href="#Trip">Trip</a>
+                          <a class="nav-link" href="{{url('/#Trip')}}">Trip</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link" href="#Destination">Spot</a>
+                          <a class="nav-link" href="{{url('/#Destination')}}">Spot</a>
                       </li>
                       <li class="nav-item">
                           <a class="nav-link" href="{{ url('/gallery') }}">Gallery</a>

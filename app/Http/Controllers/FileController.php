@@ -13,8 +13,9 @@ class FileController extends Controller
 {
     public function index(): View
     {
+        $paginate = 5;
         $files = File::orderBy('created_at', 'DESC')
-            ->paginate(30);
+            ->paginate($paginate);
         return view('file.index', compact('files'));
     }
 
@@ -27,10 +28,12 @@ class FileController extends Controller
 
     public function upload(Request $request): RedirectResponse
     {
-        $this->validate($request, [
-         'title' => 'nullable|max:100',
-         'file' => 'required|file|max:2000'
-     ]);
+
+    $this->validate($request, [
+     'title' => 'Required|max:100',
+     'file' => 'required|file|max:2000'
+      ]);
+
      $uploadedFile = $request->file('file');
      $path = $uploadedFile->store('public/files');
      $file = File::create([
